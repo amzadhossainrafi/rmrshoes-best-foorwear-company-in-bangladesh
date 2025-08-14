@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Name - RMRShoes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Top Bar and Header (same as index.html) -->
+    
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-grid">
+                <div class="product-images">
+                    <div class="main-image">
+                        <img src="images/product1.jpg" alt="Product Name" id="main-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="images/product1-thumb1.jpg" alt="Thumbnail 1">
+                        <img src="images/product1-thumb2.jpg" alt="Thumbnail 2">
+                        <img src="images/product1-thumb3.jpg" alt="Thumbnail 3">
+                        <img src="images/product1-thumb4.jpg" alt="Thumbnail 4">
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h1 class="product-title">Running Pro X</h1>
+                    <div class="product-meta">
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <a href="#reviews" class="review-link">(24 reviews)</a>
+                        </div>
+                        <div class="product-sku">SKU: RPX-2023-BL</div>
+                        <div class="product-availability">In Stock</div>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$89.99</span>
+                        <span class="old-price">$120.00</span>
+                    </div>
+                    <div class="product-description">
+                        <p>The Running Pro X combines lightweight comfort with maximum support for your runs. Featuring our patented cushioning technology and breathable mesh upper, these shoes will keep you comfortable mile after mile.</p>
+                        <ul>
+                            <li>Breathable mesh upper</li>
+                            <li>Responsive cushioning</li>
+                            <li>Durable rubber outsole</li>
+                            <li>Lightweight design</li>
+                        </ul>
+                    </div>
+                    <div class="product-options">
+                        <div class="option-size">
+                            <label>Size:</label>
+                            <div class="size-options">
+                                <button class="size-option">US 7</button>
+                                <button class="size-option">US 8</button>
+                                <button class="size-option active">US 9</button>
+                                <button class="size-option">US 10</button>
+                                <button class="size-option">US 11</button>
+                            </div>
+                        </div>
+                        <div class="option-color">
+                            <label>Color:</label>
+                            <div class="color-options">
+                                <button class="color-option" style="background-color: #000;" title="Black"></button>
+                                <button class="color-option active" style="background-color: #2b6cb0;" title="Blue"></button>
+                                <button class="color-option" style="background-color: #718096;" title="Gray"></button>
+                            </div>
+                        </div>
+                        <div class="option-quantity">
+                            <label>Quantity:</label>
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus"><i class="fas fa-minus"></i></button>
+                                <input type="number" value="1" min="1" class="quantity-input">
+                                <button class="quantity-btn plus"><i class="fas fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn add-to-cart">Add to Cart</button>
+                        <button class="btn btn-wishlist"><i class="far fa-heart"></i> Add to Wishlist</button>
+                    </div>
+                    <div class="product-meta-bottom">
+                        <div class="meta-item">
+                            <i class="fas fa-truck"></i>
+                            <span>Free shipping on orders over $50</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>30-day easy returns</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>2-year warranty</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="product-tabs">
+        <div class="container">
+            <div class="tabs-header">
+                <button class="tab-btn active" data-tab="description">Description</button>
+                <button class="tab-btn" data-tab="specs">Specifications</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+                <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+            </div>
+            <div class="tabs-content">
+                <div class="tab-pane active" id="description">
+                    <h3>Product Description</h3>
+                    <p>The Running Pro X is designed for runners who demand both performance and comfort. The lightweight mesh upper provides excellent breathability, while the cushioned midsole absorbs impact and returns energy with every stride.</p>
+                    <p>Our proprietary outsole design offers superior traction on both roads and trails, making these shoes versatile enough for any running surface. The snug heel counter and padded collar provide a secure, comfortable fit that minimizes slippage.</p>
+                </div>
+                <div class="tab-pane" id="specs">
+                    <h3>Technical Specifications</h3>
+                    <table>
+                        <tr>
+                            <th>Weight</th>
+                            <td>9.2 oz (Men's size 9)</td>
+                        </tr>
+                        <tr>
+                            <th>Drop</th>
+                            <td>8mm</td>
+                        </tr>
+                        <tr>
+                            <th>Upper Material</th>
+                            <td>Breathable engineered mesh</td>
+                        </tr>
+                        <tr>
+                            <th>Midsole</th>
+                            <td>Dual-density cushioning foam</td>
+                        </tr>
+                        <tr>
+                            <th>Outsole</th>
+                            <td>High-abrasion rubber</td>
+                        </tr>
+                        <tr>
+                            <th>Recommended Use</th>
+                            <td>Road running, treadmill, light trail</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tab-pane" id="reviews">
+                    <h3>Customer Reviews</h3>
+                    <div class="review-summary">
+                        <div class="average-rating">
+                            <div class="average-number">4.2</div>
+                            <div class="average-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <div class="total-reviews">Based on 24 reviews</div>
+                        </div>
+                        <div class="rating-bars">
+                            <div class="rating-bar">
+                                <span>5 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 60%;"></div>
+                                </div>
+                                <span>14</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>4 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 25%;"></div>
+                                </div>
+                                <span>6</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>3 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 8%;"></div>
+                                </div>
+                                <span>2</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>2 stars</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 4%;"></div>
+                                </div>
+                                <span>1</span>
+                            </div>
+                            <div class="rating-bar">
+                                <span>1 star</span>
+                                <div class="bar-container">
+                                    <div class="bar" style="width: 0%;"></div>
+                                </div>
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-form">
+                        <h4>Write a Review</h4>
+                        <form>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <div class="rating-input">
+                                    <i class="far fa-star" data-rating="1"></i>
+                                    <i class="far fa-star" data-rating="2"></i>
+                                    <i class="far fa-star" data-rating="3"></i>
+                                    <i class="far fa-star" data-rating="4"></i>
+                                    <i class="far fa-star" data-rating="5"></i>
+                                    <input type="hidden" name="rating" id="rating-value">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-title">Review Title</label>
+                                <input type="text" id="review-title" name="review-title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="review-text">Your Review</label>
+                                <textarea id="review-text" name="review-text" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="tab-pane" id="shipping">
+                    <h3>Shipping Information</h3>
+                    <p>We offer free standard shipping on all orders over $50. For orders under $50, a flat shipping rate of $5.99 applies.</p>
+                    <p>Standard shipping typically delivers within 3-5 business days. Expedited shipping options are available at checkout.</p>
+                    <h3>Returns & Exchanges</h3>
+                    <p>We offer a 30-day return policy. Items must be in their original condition with all tags attached. To initiate a return, please contact our customer service team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <div class="container">
+            <h2 class="section-title">You May Also Like</h2>
+            <div class="product-grid">
+                <!-- Related products will be loaded via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        // Product detail page specific scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Thumbnail image click
+            $('.thumbnail-images img').click(function() {
+                const newSrc = $(this).attr('src').replace('-thumb', '');
+                $('#main-image').attr('src', newSrc);
+                $('.thumbnail-images img').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Size selection
+            $('.size-option').click(function() {
+                $('.size-option').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Color selection
+            $('.color-option').click(function() {
+                $('.color-option').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Tab switching
+            $('.tab-btn').click(function() {
+                const tabId = $(this).data('tab');
+                $('.tab-btn').removeClass('active');
+                $(this).addClass('active');
+                $('.tab-pane').removeClass('active');
+                $(`#${tabId}`).addClass('active');
+            });
+
+            // Rating stars
+            $('.rating-input i').hover(function() {
+                const rating = $(this).data('rating');
+                $(this).prevAll('i').addBack().removeClass('far').addClass('fas');
+                $(this).nextAll('i').removeClass('fas').addClass('far');
+            }, function() {
+                const currentRating = $('#rating-value').val() || 0;
+                if (currentRating > 0) {
+                    $('.rating-input i').slice(0, currentRating).removeClass('far').addClass('fas');
+                    $('.rating-input i').slice(currentRating).removeClass('fas').addClass('far');
+                } else {
+                    $('.rating-input i').removeClass('fas').addClass('far');
+                }
+            });
+
+            $('.rating-input i').click(function() {
+                const rating = $(this).data('rating');
+                $('#rating-value').val(rating);
+            });
+
+            // Add to cart
+            $('.add-to-cart').click(function() {
+                const productId = 1; // This would be dynamic in a real app
+                addToCart(productId);
+            });
+        });
+    </script>
+</body>
+</html>

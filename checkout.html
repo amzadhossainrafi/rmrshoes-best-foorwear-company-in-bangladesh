@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - RMRShoes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="checkout-page">
+    <!-- Top Bar and Header (same as index.html) -->
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Checkout</h1>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <div class="checkout-container">
+                <div class="checkout-steps">
+                    <div class="step active" data-step="1">
+                        <span>1</span>
+                        <p>Shipping</p>
+                    </div>
+                    <div class="step" data-step="2">
+                        <span>2</span>
+                        <p>Payment</p>
+                    </div>
+                    <div class="step" data-step="3">
+                        <span>3</span>
+                        <p>Confirmation</p>
+                    </div>
+                </div>
+
+                <div class="checkout-content">
+                    <form class="checkout-form">
+                        <div class="checkout-step active" id="step-1">
+                            <h2>Shipping Information</h2>
+                            <div class="form-group">
+                                <label for="shipping-name">Full Name</label>
+                                <input type="text" id="shipping-name" name="shipping-name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-email">Email Address</label>
+                                <input type="email" id="shipping-email" name="shipping-email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-phone">Phone Number</label>
+                                <input type="tel" id="shipping-phone" name="shipping-phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-address">Street Address</label>
+                                <input type="text" id="shipping-address" name="shipping-address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-city">City</label>
+                                <input type="text" id="shipping-city" name="shipping-city" required>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="shipping-state">State/Province</label>
+                                    <input type="text" id="shipping-state" name="shipping-state" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="shipping-zip">ZIP/Postal Code</label>
+                                    <input type="text" id="shipping-zip" name="shipping-zip" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="shipping-country">Country</label>
+                                <select id="shipping-country" name="shipping-country" required>
+                                    <option value="">Select Country</option>
+                                    <option value="US">United States</option>
+                                    <option value="CA">Canada</option>
+                                    <option value="UK">United Kingdom</option>
+                                    <!-- More countries would be added -->
+                                </select>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="same-as-shipping" name="same-as-shipping">
+                                <label for="same-as-shipping">Billing address is the same as shipping address</label>
+                            </div>
+                            <div class="billing-fields">
+                                <h3>Billing Information</h3>
+                                <div class="form-group">
+                                    <label for="billing-name">Full Name</label>
+                                    <input type="text" id="billing-name" name="billing-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="billing-address">Street Address</label>
+                                    <input type="text" id="billing-address" name="billing-address">
+                                </div>
+                                <div class="form-group">
+                                    <label for="billing-city">City</label>
+                                    <input type="text" id="billing-city" name="billing-city">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="billing-state">State/Province</label>
+                                        <input type="text" id="billing-state" name="billing-state">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="billing-zip">ZIP/Postal Code</label>
+                                        <input type="text" id="billing-zip" name="billing-zip">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="billing-country">Country</label>
+                                    <select id="billing-country" name="billing-country">
+                                        <option value="">Select Country</option>
+                                        <option value="US">United States</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="UK">United Kingdom</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="checkout-actions">
+                                <button type="button" class="btn btn-next" data-next="2">Continue to Payment</button>
+                            </div>
+                        </div>
+
+                        <div class="checkout-step" id="step-2">
+                            <h2>Payment Method</h2>
+                            <div class="payment-methods">
+                                <div class="payment-method active">
+                                    <input type="radio" id="payment-credit" name="payment-method" value="credit" checked>
+                                    <label for="payment-credit">Credit/Debit Card</label>
+                                    <div class="payment-details">
+                                        <div class="form-group">
+                                            <label for="card-number">Card Number</label>
+                                            <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="card-name">Name on Card</label>
+                                            <input type="text" id="card-name" name="card-name" placeholder="John Smith">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <label for="card-expiry">Expiry Date</label>
+                                                <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/YY">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="card-cvv">CVV</label>
+                                                <input type="text" id="card-cvv" name="card-cvv" placeholder="123">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="payment-method">
+                                    <input type="radio" id="payment-paypal" name="payment-method" value="paypal">
+                                    <label for="payment-paypal">PayPal</label>
+                                    <div class="payment-details">
+                                        <p>You will be redirected to PayPal to complete your payment</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-actions">
+                                <button type="button" class="btn btn-prev" data-prev="1">Back to Shipping</button>
+                                <button type="button" class="btn btn-next" data-next="3">Review Order</button>
+                            </div>
+                        </div>
+
+                        <div class="checkout-step" id="step-3">
+                            <h2>Order Summary</h2>
+                            <div class="checkout-summary">
+                                <div class="checkout-items">
+                                    <!-- Items will be loaded via JavaScript -->
+                                </div>
+                                <div class="checkout-totals">
+                                    <!-- Totals will be loaded via JavaScript -->
+                                </div>
+                            </div>
+                            <div class="shipping-method">
+                                <h3>Shipping Method</h3>
+                                <div class="form-group">
+                                    <input type="radio" id="shipping-standard" name="shipping-method" value="standard" checked>
+                                    <label for="shipping-standard">Standard Shipping (3-5 business days) - Free</label>
+                                </div>
+                                <div class="form-group">
+                                    <input type="radio" id="shipping-express" name="shipping-method" value="express">
+                                    <label for="shipping-express">Express Shipping (1-2 business days) - $9.99</label>
+                                </div>
+                            </div>
+                            <div class="checkout-actions">
+                                <button type="button" class="btn btn-prev" data-prev="2">Back to Payment</button>
+                                <button type="submit" class="btn">Place Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script src="cart.js"></script>
+    <script>
+        // Checkout page specific scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Step navigation
+            $('.btn-next').click(function() {
+                const nextStep = $(this).data('next');
+                $('.checkout-step').removeClass('active');
+                $(`#step-${nextStep}`).addClass('active');
+                $(`.step`).removeClass('active');
+                $(`.step[data-step="${nextStep}"]`).addClass('active');
+            });
+
+            $('.btn-prev').click(function() {
+                const prevStep = $(this).data('prev');
+                $('.checkout-step').removeClass('active');
+                $(`#step-${prevStep}`).addClass('active');
+                $(`.step`).removeClass('active');
+                $(`.step[data-step="${prevStep}"]`).addClass('active');
+            });
+
+            // Payment method selection
+            $('.payment-methods input[type="radio"]').change(function() {
+                $('.payment-method').removeClass('active');
+                $(this).closest('.payment-method').addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
